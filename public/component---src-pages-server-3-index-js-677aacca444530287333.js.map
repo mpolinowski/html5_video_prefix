@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/server3/index.js"],"names":["Home"],"mappings":"6FAAA,wEAEe,SAASA,IACtB,OAAO","file":"component---src-pages-server-3-index-js-677aacca444530287333.js","sourcesContent":["import React from \"react\"\r\n\r\nexport default function Home() {\r\n  return <div>Server3</div>\r\n}\r\n"],"sourceRoot":""}

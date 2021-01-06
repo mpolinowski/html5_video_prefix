@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+
+    ingress:
+        image: nginx:stable-alpine
+        container_name: ingress
+        networks:
+            - gateway
+        ports:
+            - "80:80"
+        restart: unless-stopped
+        volumes:
+            - /opt/html5_video_prefix/conf/default.conf:/etc/nginx/conf.d/default.conf
+            - /opt/html5_video_prefix/public:/opt/html5_video_prefix/public
+
+networks:
+  gateway: {}
